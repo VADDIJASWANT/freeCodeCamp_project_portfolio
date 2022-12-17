@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0;
+}
+html {
+    font-size:0.8vw;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+#navbar{
+    width:100vw;
+    height:10vh;
+    background-color: rgb(255, 0, 0);
+    position:fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-element{
+    width:10vw;
+    height:100%;
+    text-decoration:none;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size:2.5rem;
+}
+.nav-element:hover{
+    background-color: white;
+    color:black;
+}
+#welcome-section{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(
+        45deg,
+        rgb(133, 133, 133),
+        black
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items:center;
+    font-size:3rem;
+    color:white;
+}
+.projects-heading{
+    width: 100vw; 
+    background-color: black;
+    color: white;
+     text-align: center;
+    font-size: 3rem;
+    padding:30px 0;
+    font-weight: bold; 
+} 
+#projects{
+    width:100%;
+    background-color: black;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:2.5rem;
+    padding:50px 0;
+}
+
+.project-tile{
+    height:300px;
+    background-color: white;
+    border-radius:5px;
+}
+img{
+    width:100%;
+    height:80%;
+    border-radius: 5px 5px 0 0;
+} 
+.project-tile a{
+    text-decoration: none;
+    color:black;
+}
+
+.Project_Name{
+    font-size: 2rem;
+    height:20%;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact{
+    background-color: #303841;
+    color:white;
+    font-size: 2.5rem;
+    width:100vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts{
+    margin-top:50px;
+    width:60vw;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts a{
+    text-decoration:none;
+    color:white;
+}
+.contacts a:hover{
+    transition:all 1sec ease-in-out;
+    margin-top:10px;
+    text-decoration:none;
+    color:orange;
+}
+
+@media(max-width:400px){
+    html{
+        font-size:1vw;
+    }
+}
